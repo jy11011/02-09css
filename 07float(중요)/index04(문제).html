@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .list{margin: 0 auto; border: 1px solid#777; width: 500px; margin-top: 100px; overflow: hidden; }
+
+        .list .left {float: left;  width: 50%; box-sizing: border-box; }
+
+        .list .right{float: right; border: 1px solid#777; width: 50%; box-sizing: border-box; }
+        .right .top { margin-bottom: 40px; }
+       
+        .right .bottom{border: 1px solid#777;}
+        .right .bottom .b-left{float: left;}
+        .right .bottom .b-right{float: right;}
+        
+        .right .bt{clear: both; overflow: hidden;}
+        .right .bt .b1 {float: left; width: 50%; }
+        .right .bt .b2 {float: right; width: 50%;}
+
+    </style>
+</head>
+<body>
+    <div class="list">
+
+        <div class="left">
+            <img src="#" alt="사진">
+        </div>
+        
+        <div class="right">
+            <div class="top">제목 패딩바텀<br>내용gg</div>
+            <div class="bottom">
+                <div class="b-left">가격</div>
+                <div class="b-right">10000원</div>
+
+            </div>
+            <div class="bt">
+                <button type="button" class="b1">장바구니</button>
+                <button type="button" class="b2">구매하기</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
