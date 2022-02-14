@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <style>
+        *{margin: 0; padding: 0; list-style: none;}
+        .wrap{margin: 0 auto; 
+            border: 1px solid#777; 
+            width: 500px; padding: 10px; 
+            position: relative;
+            box-sizing: border-box;
+        }
+    
+        .wrap-img{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .wrap-img img {width: 50px;}
+
+        .wrap-content , .wrap-control{
+            padding-left: 60px;
+
+        }
+        
+        .wrap-content textarea{
+             width: 100%; 
+             box-sizing: border-box; 
+             resize: vertical; /* 세로만 사이징 */
+             padding: 10px;
+            }
+        
+        .wrap-control {overflow: hidden;}
+        .wrap-input{float: left;}
+        .wrap-control button{float: right;}
+        .wrap-input input{display: block; width: 150px; margin-bottom: 5px;}
+    
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrap" >
+        <div class="wrap-img"> <!-- 이미지영역 -->
+            <img src="img/fish.png" alt="이미지">
+        </div>
+        <div class="wrap-content"> <!-- 내용영역 -->
+            <textarea rows="10" placeholder="댓글등록"></textarea>
+        </div>
+        <div class="wrap-control"> <!-- 버튼영역 -->
+            <div class="wrap-input">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button type="button">등록하기</button>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="wrap-img">
+            <img src="img/fish.png" alt="이미지">
+        </div>
+        <div class="wrap-control">
+            <div class="wrap-input">
+                <p>제목</p>
+                <p>내용</p>
+            </div>
+            <button type="button">수정</button>
+            <button type="button">삭제</button>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

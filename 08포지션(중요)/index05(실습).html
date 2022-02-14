@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0; list-style: none;}
+        body{background-image: url('img/bg.png');}
+
+        .logo{margin: 20px auto; width: 500px; }
+        .menu {background-color: black; text-align: center;}
+        .menu ul li{display:inline; padding: 20px;}
+        .menu ul li a{display: inline-block; width: 50px; height: 50px; line-height: 50px; color: #fff; text-decoration: none;}
+        .menu ul li a:hover{background-color: #4d4d4d;}
+
+        .item{background-color: #fff;}
+        .item ul {overflow: hidden; margin: 960px; margin: 0 auto;}
+        .item ul li {float: left; width: 25%; box-sizing: border-box; margin: 40 0px; text-align: center; padding: 0;}
+    
+        .content{width: 700px; margin: 0 auto; position: relative;}
+        .content .left{position: absolute; top: 0; left: -230px;}
+        .content .right{position: absolute; top: 0; right: -230px;}
+        
+        .top{position: fixed; width: 100px; height: 100px; background-color: red; top: 0; right: 0;}
+    </style>
+
+
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="이미지">
+        </div>
+
+         <nav class="menu">
+             <ul>
+                 <li><a href="#">메뉴1</a></li>
+                 <li><a href="#">메뉴1</a></li><
+                 <li><a href="#">메뉴1</a></li>
+                 <li><a href="#">메뉴1</a></li>
+             </ul>
+        </nav>
+    </header>
+
+    <article class="item">  
+        <ul>
+            <li><img src="img/item01.png" alt="이미지"><br>"ipone"</li>
+            <li><img src="img/item02.png" alt="이미지"><br>"ipod"</li>
+            <li><img src="img/item03.png" alt="이미지"><br>"ipad"</li>
+            <li><img src="img/item04.png" alt="이미지"><br>"imac"</li>
+        </ul>
+    </article>
+
+    <section>
+        <div class="content">
+            <img src="img/ipad.jpg" alt="이미지">
+            <div>
+                <aside class="left">
+                    <img src="img/side01.png" alt="이미지"><br>
+                    <img src="img/side02.png" alt="이미지">
+                </aside>
+                <aside class="right">
+                    <img src="img/side03.png" alt="이미지"><br>
+                    <img src="img/side04.png" alt="이미지">
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <div class="top">
+        <a href="#">top</a>
+    </div>
+</body>
+</html>
