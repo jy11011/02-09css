@@ -59,10 +59,42 @@ color: #fff;
     background-color: #333;
     color: #fff;
 }
+.tab_content ul li a {
+    display: block; 
+    position: relative; 
+    padding: 10px; 
+    border-top: 1px solid #333;
+}
+.tab_content ul li:nth-child(1) a {border-top: none;}
+.tab_content ul li a span {display: block;}
+
+.tab_content ul li a .thumbs {position: absolute; top: 10px; left: 10px;}
+
+.tab_content ul li a .content {padding-left: 55px;}
+.tab_content ul li a .content > strong,
+.tab_content ul li a .content > p {font-size: 15px;}
+.tab_content ul li a .content > strong { /* 가로사이즈 넘지않게 */
+    font-size: 15px; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    width: 125px; 
+    overflow: hidden; 
+    display: block;
+}
+.footer {
+    overflow: hidden;
+    width: 960px; 
+    margin: 0 auto; 
+    border: 1px solid #777;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+/* 
 .tab_content ul li a {display: block; overflow: hidden;}
 .tab_content ul li a span{display: block;}
 .tab_content ul li a .content_left{float: left; margin: 10px;}
-.tab_content ul li a .content_right{float: right; margin: 10px;}
+.tab_content ul li a .content_right{float: right; margin: 10px;} */
 
 
 
