@@ -1,0 +1,204 @@
+/* header 디자인 */
+
+.custom-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+
+.custom-header .navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.custom-header .navbar-inverse{
+    background-color: #282A35;
+}
+
+.custom-header .navbar-inverse .navbar-nav > .active > a{
+    background-color: #464852;
+}
+
+.custom-header .navbar-inverse .navbar-nav > li > a:hover,
+.custom-header .navbar-inverse .navbar-nav > li > a:focus{
+    background-color: #464852;
+}
+
+.custom-header .navbar-inverse .navbar-nav > li > a{
+    color: #fff;
+}
+
+.custom-header .navbar-brand{
+    padding: 10px 20px;
+}
+
+/* footer스타일 */
+
+footer{
+    background-color: #282A35;
+    margin-top: 50px ;
+}
+
+footer .copyright{
+    color: #fff;
+    padding: 30px 0;
+    
+}
+
+footer address{margin: 0;}
+
+footer .footer-menu{
+    overflow: hidden;
+    padding: 30px 0;
+    
+}
+
+footer .footer-menu .copyright-menu{
+    float: right;
+}
+
+footer .footer-menu .copyright-menu li{
+    display: inline-block;
+    padding: 0 5px;
+}
+footer .footer-menu .copyright-menu li a{
+    color: #fff;
+
+}
+
+/* 슬라이드영역 */
+.slide-list{
+    padding: 0;
+
+}
+
+.carousel-control.right {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.carousel-control.left {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* 섹션영역 */
+.prod-list, .prod-link{
+    border: 1px solid#777;
+    display: block;
+    text-align: center;
+}
+
+.prod-list, .prod-inner{
+    padding: 5px;
+}
+
+.prod-link{
+    position: relative;
+}
+
+.prod-link .arrow{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ccc;
+    color: #fff;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    opacity: 1;
+}
+
+.prod-link .hover{
+    width: 100PX;
+    background-color: #4285F4;
+    opacity: 0;/* 투명도 1이면보임 0이면 안보임 */
+}
+
+.prod-link:hover{
+    border: 1px solid#4285f4;
+}
+
+.prod-link:hover > .arrow{
+    opacity: 0;
+}
+.prod-link:hover > .hover{
+    opacity: 1;
+}
+
+/* ====================================================== */
+/* 블로그 스타일 */
+
+@media(min-width:1200px) {
+    .blog > .col-lg-2 {
+        width: 20%;
+    }
+}
+
+
+.blog-inner{
+    border: 1px solid#ddd;
+    position: relative;
+}
+
+.blog-inner .blog-content{
+    padding: 15px 12px;
+}
+
+.blog-img{
+    text-align: center;
+}
+
+.blog-content > p{
+    font-size: 15px;
+    font-weight: bold;
+    height: 60px;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+/* 가격영역 */
+
+.blog-info{
+    overflow: hidden;
+}
+
+.blog-info ul{
+    float: left;
+}
+
+.blog-info ul li{
+    display: inline-block;
+    color: yellow;
+}
+
+.blog-info strong{
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.blog-content-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.8);
+    padding: 20px;
+    opacity: 0;
+}
+
+.blog-content-hover a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.blog-inner:hover > .blog-content-hover{
+    opacity: 1;
+}
+
+
